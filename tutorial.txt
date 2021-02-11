@@ -1,0 +1,24 @@
+* buka cmd ketik
+  pip install PyQt5
+  pip install pymysql
+
+* copy command yang ada di file command ke mysql di xampp
+  buka aplikasi XAMPP
+  start apache dan mysql
+  tekan tombol shell disebelah kanan
+  ketik mysql -u root
+  paste command yang telah di copy
+
+* pada line 488 dan 732 chrome_path ubah sesuai lokasi terinstallnya chrome kalian atau apabila bingung ubah
+  line 489 
+  self.about.clicked.connect(lambda: webbrowser.open('http://localhost/mediawiki/index.php/Rindang.In'))
+  line 813
+  self.alamatButton.clicked.connect(lambda: webbrowser.open(url))
+  line 821
+  self.kontak.clicked.connect(lambda: webbrowser.open(url))
+* pada line 624 
+  gambarBrowse = QFileDialog.getOpenFileName(self, 'open file', 'D:/File Kuliah/Materi Perkuliahan S3/Pemrograman Berbasis Objek/Tubes QTDesign/Image', 'Images (*)')
+  ubah menjadi
+  gambarBrowse = QFileDialog.getOpenFileName(self, 'open file', 'C:', 'Images (*)')
+
+* jalankan app.py

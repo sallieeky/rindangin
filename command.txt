@@ -1,0 +1,114 @@
+create database RindangIn;
+use RindangIn;
+
+create table anggota
+(id_anggota int(5) auto_increment primary key,
+nama varchar(255) not null,
+username varchar(255) not null,
+password varchar(255) not null);
+
+create table thias
+(id_thias int(5) auto_increment primary key,
+gambar varchar(255) not null,
+nama_thias varchar(255) not null,
+harga bigint(20) not null,
+alamat varchar(255) not null,
+no_telp bigint(20) not null,
+deskripsi text);
+
+create table tobat
+(id_tobat int(5) auto_increment primary key,
+gambar varchar(255) not null,
+nama_tobat varchar(255) not null,
+harga bigint(20) not null,
+alamat varchar(255) not null,
+no_telp bigint(20) not null,
+deskripsi text);
+
+create table alat
+(id_alat int(5) auto_increment primary key,
+gambar varchar(255) not null,
+nama_alat varchar(255) not null,
+harga bigint(20) not null,
+alamat varchar(255) not null,
+no_telp bigint(20) not null,
+deskripsi text);
+
+create table pubit
+(id_pubit int(5) auto_increment primary key,
+gambar varchar(255) not null,
+nama_pubit varchar(255) not null,
+harga bigint(20) not null,
+alamat varchar(255) not null,
+no_telp bigint(20) not null,
+deskripsi text);
+
+insert into anggota(nama,username,password) values ('Admin', 'admin', 'firns');
+
+
+insert into thias(gambar,nama_thias,harga,alamat,no_telp,deskripsi) values
+
+('Image/thias/keladi red star.jpeg','Keladi Red Star',30000,'Bontang, Jl. Imam Bonjol','+6283153272461','KELADI RED STAR merupakan tanaman hias yang memiliki Ciri khas bentuk daunnya yang menyerupai bentuk hati. Daun yang dimilikinya biasanya licin karena mengandung lapisan lilin, ukuran lebar daun 30 cm, panjang 30 cm dan ketinggian tanaman ini berkisar antara 35-40 cm.'),
+
+('Image/thias/kuping gajah.jpeg','Kuping Gajah',30000,'Bontang,Jl. Ahmad Yani','+6283153272461','KUPING GAJAH atau yang memiliki nama latin Anthurium merupakan tanaman hias yang termasuk dalam keluarga Araceae. Pada umumnya daun kuping gajah memiliki warna hijau tua dan memiliki tulang daun berwarna putih kehijauan. Panjang tumbuhan kuping gajah bisa mencapai 20-40 cm dan lebar 15-38 cm.'),
+
+('Image/thias/lidah mertua.jpeg','Lidah Mertua',30000,'Bontang, Jl. Jendral KS. Tubun','+6283153272461','LIDAH MERTUA atau Sansevieria adalah marga tanaman hias yang cukup populer sebagai penghias bagian dalam rumah karena tanaman ini dapat tumbuh dalam kondisi yang sedikit air dan cahaya matahari. Sansevieria memiliki daun keras, sukulen, tegak, dengan ujung meruncing.'),
+
+('Image/thias/puring.jpeg','Puring',30000,'Balikpapan, Gunung Sari','+6283153272461','PURING, puding atau kroton (Codiaeum variegatum) adalah tanaman hias pekarangan populer berbentuk perdu dengan bentuk dan warna daun yang sangat bervariasi. Beragam kultivar telah dikembangkan dengan variasi warna dari hijau, kuning, jingga, merah, ungu, serta campurannya.'),
+
+('Image/thias/suplir.jpeg','Suplir',30000,'Samarinda, Jl. Imam Bonjol','+6283153272461','SUPLIR adalah tumbuhan paku populer untuk penghias ruangan atau taman  tanaman tersebut tidak menghasilkan bunga selama daur hidupnya. Suplir berkembang biak dengan spora yang terletak di sisi tepi bawah daun dewasa.');
+
+
+
+insert into tobat(gambar,nama_tobat,harga,alamat,no_telp,deskripsi) values
+
+('Image/tobat/adas.jpeg','Adas',30000,'Balikpapan, Jl. Imam Bonjol','+6283153272461','Adas atau adas pedas (Foeniculum vulgare Miller, suku adas-adasan atau Apiaceae) telah lama dikenal sebagai tanaman bumbu atau tanaman obat. Minyak adas yang dikandung biji tanaman ini merupakan salah satu komponen minyak telon.'),
+
+('Image/tobat/alang alang.jpeg','Alang Alang',30000,'Bontang, Jl. Imam Bonjol','+6283153272461','Alang alang (Imperata cylindrica L), sering digunakan sebagai obat tradisional untuk menyembuhkan berbagai penyakit terutama untuk obat panas dalam.'),
+
+('Image/tobat/antanan besar.jpeg','Antanan Besar',30000,'Bontang, Jl. Imam Bonjol','+6283153272461','Antanan besar atau antanan air (Hydrocotyle verticillata) merupakan tanaman yang berasal dari Amerika Utara dan Selatan. Daun berbentuk seperti payung, lebih besar dan lebih besar. Tanaman ini sering digunakan sebagai obat luka, demam dan wasir.'),
+
+('Image/tobat/asam jawa.jpeg','Asam Jawa',30000,'Balikpapan, Jl. Imam Bonjol','+6283153272461','Asam Jawa (Tamarindus indica) merupakan tanaman obat yang tumbuh di daerah tropis seperti Indonesia. Ciri-cirinya, pohonnya rindang dan dapat tumbuh besar hingga mencapai 20 meter. Tanaman ini biasanya digunakan untuk mengobati batuk, gangguan pencernaan, rematik, sariawan dan masih banyak lagi khasiatnya.'),
+
+('Image/tobat/asam kranji.jpeg','Asam Kranji',30000,'Bontang, Jl. Imam Bonjol','+6283153272461','Asam Kranji (Indum dialium) adalah pohon tropis yang tumbuh di daerah kering dan panas tetapi banyak hujan. Pohon ini banyak tumbuh di Indonesia, Malaysia, dan Thailand. tanaman ini berkhasiat untuk mencegah sariawan, mengobati diare, masalah pencernaan, kolestrol dan anemia.');
+
+
+insert into alat(gambar,nama_alat,harga,alamat,no_telp,deskripsi) values
+
+('Image/alat/cangkul.jpeg','Cangkul',100000,'Balikpapan, Jl. Imam Bonjol','+6283153272461','CANGKUL adalah satu jenis alat tradisional yang digunakan dalam pertanian. Cangkul digunakan untuk menggali, membersihkan tanah dari rumput ataupun untuk meratakan tanah'),
+
+('Image/alat/penyiram tanaman.jpeg','Penyiram Tanaman',20000,'Bontang, Jl. Ahmad Yani','+6283153272461','PENYIRAM TANAMAN adalah wadah berbentuk seperti cerek besar yang biasanya memiliki pegangan dan corong, dan digunakan untuk menyirami tanaman dengan tangan.'),
+
+('Image/alat/sarung tangan.jpeg','Sarung Tangan',25000,'Balikpapan, Rapak','+6283153272461','SARUNG TANGAN adalah sejenis pakaian yang menutupi tangan, baik secara sebagian ataupun secara keseluruhan. Fungsi sarung tangan ialah untuk melindungi sang pemakai dari pengaruh lingkungan sekitarnya atau melindungi lingkungan sekitar dari tangan sang pemakai.'),
+
+('Image/alat/sekop.jpeg','Sekop',125000,'Bontang, Jl. Imam Bonjol','+6283153272461','SEKOP adalah alat yang biasa digunakan untuk mengangkut pasir. Alat sekop ini terbuat dari lempengan drum bekas seperti halnya alat pertanian osrok.'),
+
+('Image/alat/selang.jpeg','Selang',200000,'Bontang, Jl. Imam Bonjol','+6283153272461','SELANG adalah tabung berlubang fleksibel yang dirancang untuk membawa cairan dari satu lokasi ke lokasi lain. Selang juga kadang-kadang disebut pipa (kata pipa biasanya mengacu pada tabung yang kaku, sedangkan selang biasanya yang fleksibel), atau lebih umum tubing.');
+
+
+
+
+insert into pubit(gambar,nama_pubit,harga,alamat,no_telp,deskripsi) values
+
+('Image/pubit/bibit bunga kertas.jpeg','Bibit Bunga Kertas',3500,'Balikpapan, Jl. Imam Bonjol','+6283153272461','BIBIT BUNGA KERTAS : Bentuknya adalah pohon kecil yang sukar tumbuh tegak. Keindahannya berasal dari seludang bunganyayang berwarna cerah dan menarik perhatian karena tumbuh dengan rimbunnya. Bentuknya adalah pohon kecil yang sukar tumbuh tegak.'),
+
+('Image/pubit/bibit bunga mawar.jpeg','Bibit Bunga Mawar',5000,'Samarinda, Jl.Juanda','+6283153272461','BIBIT BUNGA MAWAR : Tanaman bunga mawar adalah grup tumbuhan berbiji dengan pohon yang batangnya berkayu. Tumbuhan dikotil ini memiliki akar tunggang. Mawar adalah tumbuhan dengan batang yang berduri tajam serta kulit batang halus licin. Biasanya mawar memilki duri berupa seperti pengait'),
+
+('Image/pubit/bibit bunga melati.jpeg','Bibit Bunga Melati',5000,'Samarinda, Jl.Juanda','+6283153272461','BIBIT BUNGA MELATI : Tumbuhan ini merupakan jenis tanaman semak dan merambat dengan tinggi bisa mencapai 0,32 meter.'),
+
+('Image/pubit/bibit cabai.jpeg','Bibit Cabai',2500,'Samarinda, Jl.Juanda','+6283153272461','BIBIT CABAI  : Cabai atau cabai merah atau lombok adalah buah dan tumbuhan anggota genus Capsicum. Sebagai bumbu, buah cabai yang pedas sangat populer di Asia Tenggara sebagai penguat rasa makanan.'),
+
+('Image/pubit/bibit tomat.jpeg','Bibit Tomat',2500,'Samarinda, Jl.Juanda','+6283153272461','BIBIT TOMAT : Benih Tanaman Tomat hibrida untuk dataran rendah (0 - 400 m dpl), Determinate, cukup tahan genangan air. Buah oval, keras, bobot 70-100 g/buah, tahan simpan/transportasi jauh. Tahan serangan layu bakteri, ToMV, V dan Fusarium race 1. Potensi hasil 3- 4 kg/tanaman, 70 - 80 ton/ha.'),
+
+('Image/pubit/herbafarm.jpeg','Herbafarm',35000,'Samarinda, Jl.Juanda','+6283153272461','HERBAFARM :  Pupuk Bio-Organik Cair adalah pupuk organik cair yang diproduksi melalui Biological Complex Process (BCP) yang diformulasi secara khusus, dengan diperkaya mikrobia-mikrobia yang menguntungkan.'),
+
+('Image/pubit/pupuk kotoran kambing.jpeg','Pupuk Kotoran Kambing',40000,'Samarinda, Jl.Juanda','+6283153272461','PUPUK KOTORAN KAMBING  : Pupuk yang berasal dari kotoran hewan. Hewan yang kotorannya sering digunakan untuk pupuk kandang adalah hewan yang dipelihara masyarakat, seperti kambing, sapi, domba dan ayam. Selain berbentuk padat, pupuk kandang juga bisa berupa cair yang berasal dari air kencing (urine) hewan.'),
+
+('Image/pubit/pupuk npk.jpeg','Pupuk NPK',120000,'Samarinda, Jl.Juanda','+6283153272461','PUPUK NPK : adalah pupuk yang memilik kandungan tiga unsur hara makro, yaitu Nitrogen (N) Fosfor (P) dan Kalium (K). Bentuk produk pupuk NPK yang beredar di pasaran pun cukup bervariasi. Pupuk NPK padat bisa berupa tablet, pelet, briket, granul serta bubuk, sedangkan pupuk NPK cair muncul dengan aneka tingkat kelarutan.'),
+
+('Image/pubit/pupuk plp.jpeg','Pupuk PLP',85000,'Samarinda, Jl.Juanda','+6283153272461','PUPUK PLP adalah pupuk langsung pakai yang dapat mempermudah perawatan tanaman. Pupuk ini berbentuk cair, sehingga dapat kamu langsung semprotkan ke tanah.'),
+
+('Image/pubit/pupuk vitamin.jpeg','Pupuk Vitamin',75000,'Samarinda, Jl.Juanda','+6283153272461','PUPUK VITAMIN : pupuk ini biasanya memiliki kegunaan untuk Mengurangi stress pada tanaman akibat pemindahan, Merangsang pertumbuhan akar sehingga tanaman lebih cepat tumbuh, Dapat digunakan untuk segala jenis tanaman');
+
+
+
